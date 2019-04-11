@@ -2,8 +2,9 @@
   "name": "cardano-crypto-js",
   "version": "5.3.0",
   "description": "input-output-hk/cardano-crypto compiled to pure javascript using Emscripten",
-  "main": "index.js",
+  "main": "deploy.js",
   "scripts": {
+    "deploy": "babel index.js -o deploy.js",
     "build": "node build.js",
     "test": "tape test/**/*.js"
   },
@@ -23,6 +24,12 @@
   },
   "homepage": "https://github.com/vacuumlabs/cardano-crypto.js#readme",
   "devDependencies": {
+    "@babel/cli": "^7.4.3",
+    "@babel/core": "^7.4.3",
+    "@babel/plugin-transform-async-to-generator": "^7.4.0",
+    "@babel/plugin-transform-runtime": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "@babel/runtime": "^7.4.3",
     "tape": "^4.9.1"
   },
   "dependencies": {
