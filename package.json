@@ -2,9 +2,9 @@
   "name": "cardano-crypto-js",
   "version": "5.3.0",
   "description": "input-output-hk/cardano-crypto compiled to pure javascript using Emscripten",
-  "main": "deploy.js",
+  "main": "dist/index.js",
   "scripts": {
-    "deploy": "babel index.js -o deploy.js",
+    "deploy": "babel src -d dist",
     "build": "node build.js",
     "test": "tape test/**/*.js"
   },

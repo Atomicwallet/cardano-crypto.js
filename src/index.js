@@ -1,7 +1,7 @@
 const bip39 = require('bip39-light')
 const cbor = require('borc')
 
-const Module = require('./lib.js')
+const Module = require('../lib.js')
 const crc32 = require('./utils/crc32')
 const base58 = require('./utils/base58')
 const scrypt = require('./utils/scrypt-async')
@@ -567,7 +567,7 @@ async function paperWalletUnscrambleStrings(passphrase, mnemonic) {
 async function xpubToHdPassphrase(xpub) {
   validateBuffer(xpub, 64)
 
-  return pbkdf2(xpub, 'address-hashing', 500, 32, 'sha512')  
+  return pbkdf2(xpub, 'address-hashing', 500, 32, 'sha512')
 }
 
 function packAddress(derivationPath, xpub, hdPassphrase, derivationScheme) {

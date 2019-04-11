@@ -1,5 +1,5 @@
 const test = require('tape')
-const lib = require('..')
+const lib = require('../dist')
 
 const sampleWalletMnemonicV1 = 'logic easily waste eager injury oval sentence wine bomb embrace gossip supreme'
 const sampleWalletMnemonicV2 = 'cost dash dress stove morning robust group affair stomach vacant route volume yellow salute laugh'
