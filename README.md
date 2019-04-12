@@ -1,3 +1,5 @@
+# This is compiled/transpiled/builded and ready to use fork 
+
 # cardano-crypto.js
 * [input-output-hk/cardano-crypto](https://github.com/input-output-hk/cardano-crypto/tree/master/cbits)
 * [haskell-crypto/cryptonite](https://github.com/haskell-crypto/cryptonite)
