@@ -34,7 +34,7 @@
   },
   "dependencies": {
     "bip39-light": "^1.0.7",
-    "borc": "^2.1.0",
+    "borc": "2.1.0",
     "pbkdf2": "^3.0.17"
   }
 }
